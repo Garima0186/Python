@@ -1,0 +1,34 @@
+import random
+
+secret_number = random.randrange(1,5)
+guess_allowed =3
+
+print("Welcome To guessing game")
+
+for i in range(1, guess_allowed +1):
+    try:
+        guess = int(input("Take a guess: "))
+
+        if guess == secret_number:
+            print("Win!")
+            break
+
+        elif i < guess_allowed:
+            print("Try again")
+
+        else:
+            print("sorry out of guesses")
+
+    except ValueError:
+        print("another number")
+
+
+Output:
+
+Welcome
+Take a guess: 2
+Try again
+Take a guess: 3
+Win!
+
+Process finished with exit code 0

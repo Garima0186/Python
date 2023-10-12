@@ -1,0 +1,37 @@
+print("Pick one of these: ")
+print("1.Good")
+print("2.Bad")
+print("3.Mix")
+
+while True:
+    user_input=input("How was your day ? Enter your choice: ")
+
+    if user_input in ('1','2','3'):
+        if  user_input == '1':
+            print("awesome")
+            break
+
+        elif user_input == '2':
+            print('bad')
+            break
+
+        elif user_input == '3':
+            print('mix')
+            break
+
+
+    else:
+        print("ok")
+        break
+
+
+Output:
+
+Pick one of these: 
+1.Good
+2.Bad
+3.Mix
+How was your day ? Enter your choice: 3
+mix
+
+Process finished with exit code 0

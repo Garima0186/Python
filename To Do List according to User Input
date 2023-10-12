@@ -1,0 +1,21 @@
+print("To Do list")
+x= input("How many activities you want to enter?")
+mylist = []
+
+for i in range(0,int(x) ):
+    todo =str(input("Enter your activity"))
+    mylist.append(todo)
+
+print(mylist)
+
+
+Output:
+
+To Do list
+How many activities you want to enter? 3
+Enter your activity Clean dishes
+Enter your activity pick trash
+Enter your activity cook dinner
+[' Clean dishes', ' pick trash', ' cook dinner']
+
+Process finished with exit code 0

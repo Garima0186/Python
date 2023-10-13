@@ -1,0 +1,28 @@
+todos = []
+
+while True:
+    user_action = input(" Add, Show or exit ")
+
+    match user_action:
+        case 'Add':
+           todo = input("Enter a todo : ")
+           todos.append(todo)
+        case 'Show':
+            print(todos)
+        case 'exit':
+            break
+print('bye')
+
+
+Output:
+
+Add, Show or exit :Add
+Enter a todo : Clean
+ Add, Show or exit :Add
+Enter a todo : Dance
+ Add, Show or exit :Show
+['Clean', 'Dance']
+ Add, Show or exit :exit
+bye
+
+Process finished with exit code 0

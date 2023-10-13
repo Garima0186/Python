@@ -1,0 +1,33 @@
+todos = []
+
+while True:
+    user_action = input("add, show, or exit :")
+    user_action = user_action.strip()
+
+    match user_action:
+        case 'add' :
+            todo = input(" Enter a todo :")
+            todos.append(todo)
+
+        case 'show':
+            for items in todos:
+                print(items)
+
+        case 'exit':
+            break
+
+print('bye')
+
+Output:
+
+add, show, or exit :add
+ Enter a todo :dance
+add, show, or exit :add
+ Enter a todo :learn
+add, show, or exit :show
+dance
+learn
+add, show, or exit :exit
+bye
+
+Process finished with exit code 0

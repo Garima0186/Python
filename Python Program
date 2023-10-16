@@ -1,0 +1,19 @@
+Create a program that:
+
+1. Prompts the user to input a (dollar) amount.
+
+2. Calculates the corresponding amount in euros, given an exchange rate of 2.
+
+3. Prints out the amount in euros.
+
+Program: 
+
+rate = 2
+user_input=float(input("Enter the dollar amount: "))
+x=user_input*2
+print("The amount you entered in dollars will be this ", x, " in Euros")
+
+Output:
+
+Enter the dollar amount: 12
+The amount you entered in dollars will be this  24.0  in Euro

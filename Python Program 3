@@ -1,0 +1,18 @@
+Prompts the user to input the person's name.
+Returns the rank that person has.
+
+Program:
+
+ranking = ['John', 'Sen', 'Lisa']
+
+user_input= input("Pick name: John, Sen, Lisa : ")
+name=ranking.index(user_input)+1
+print(name)
+
+
+Output::
+
+Pick name: John, Sen, Lisa : Lisa
+3
+
+Process finished with exit code 0

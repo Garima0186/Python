@@ -1,0 +1,31 @@
+create a program that:
+
+1. prompts the user to enter a new member.
+
+2. adds that member to members.txt at the end of the existing members.
+
+Program:
+
+user_input=input("Enter a new member: ")
+
+file=open('/Users/garimachauhan/Downloads/members.txt','r')
+new_member=file.readlines()
+file.close()
+
+new_member.append(user_input+"\n")
+
+file=open('/Users/garimachauhan/Downloads/members.txt','w')
+new_member=file.writelines(new_member)
+file.close()
+
+file=open('/Users/garimachauhan/Downloads/members.txt','r')
+print(file.read())
+
+Output:
+
+Enter a new member: gigi
+John
+Sono
+Lax
+Max
+gigi

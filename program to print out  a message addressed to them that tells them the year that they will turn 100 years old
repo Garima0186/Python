@@ -1,0 +1,16 @@
+# Ask user name and age and write a program to print out  a message addressed to them that tells them the year that they will turn 100 years old
+
+name= input(" What is your name? ")
+age= int(input("What is your age? " ))
+
+turn_100_years = 2024 - age + 100
+
+print(f'You will turn 100 years in the year : {turn_100_years} ')
+
+
+
+Output:
+
+What is your name?  GG
+What is your age?  24
+you will turn 100 years in the year : 2100 
